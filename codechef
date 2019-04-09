@@ -1,0 +1,25 @@
+import java.util.*;
+public class State_and_Capital{
+public static void main(String args[]){
+Scanner sc=new Scanner(System.in);
+int i,ns,k=0,t=0;
+String a[]=new String[10];
+String b[]=new String[10];
+System.out.println("Enter 10 States and Capital");
+for(i=0;i<10;i++){
+a[i]=sc.next();
+a[b]=sc.next();
+}
+System.out.println("Enter the State whose Capital is to be searched");
+ns=sc.nextInt();
+for(i=0;i<10;i++){
+if(a[i].equals(ns))
+k=1;
+t=i;
+}
+if(k==1)
+System.out.println("Capital : "+b[t]);
+else
+System.out.println("Capital not found!");
+}
+}
